@@ -1,0 +1,32 @@
+{{ partial:components/header-hero title="avio karte" content="regularne, pomorske, korporativne,
+work and travel, studentske, erasmus, windmill, offshore.." }}
+
+{{ partial:components/image-grid }}
+
+{{ partial:components/cta-plane }}
+
+{{ partial:components/cta-custom-home title="poslovni korisnici" img="logotipi_partnera.jpeg" undertitle=""
+content="Poslovna putovanja su neizostavan segment uspjeha.
+Svakom klijentu pristupamo individualno i dostupni smo 24/7.
+Za Vas ćemo organizirati transfere i avio karte, rezervirat ćemo smještaj
+u hotelima sukladno Vašim mogućnostima i potrebama.
+Nama možete prepustiti brigu oko putnog osiguranja, rent a cara
+i svega ostalog što će Vaše putovanje učiniti ugodnijim.
+Ispunite direktan zahtjev ili nam pošaljite upit za rezervaciju mailom
+i naši će Vam stručni djelatnici odgovoriti u najkraćem roku." url="o-nama-i-kontakt#forma" }}
+
+{{ partial:components/offer-grid title="top ponuda" undertitle="Provjerite predlog ponuda koje smo izdvojili za Vas. <br>
+Ukoliko nema destinacije koja Vas interesira, obratite nam se mailom ili ispunite direktan zahtjev, <br>
+te ćemo Vam poslati ponudu za putovanje po Vašoj mjeri.<br>" type="top" }}
+
+{{ collection:posebna_ponuda limit=1 }}
+    {{ partial:components/cta-custom-home-cms title="{{ title }}"
+        img="{{ assets }}{{ url }}{{ /assets }}"
+        undertitle="{{ podnaslov }}"
+        content="{{ content }}"
+        excerpt="{{ excerpt }}"
+        url="{{ url }}" }}
+{{ /collection:posebna_ponuda }}
+
+{{ partial:components/contact-line }}
+{{ partial:components/footer-top }}

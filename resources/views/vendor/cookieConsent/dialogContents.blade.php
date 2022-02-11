@@ -1,0 +1,56 @@
+{{-- <div class="js-cookie-consent cookie-consent fixed bottom-0 inset-x-0 pb-2 sm:pb-5">
+
+    <span class="cookie-consent__message">
+        {!! trans('cookieConsent::texts.message') !!}
+    </span>
+
+    <button class="js-cookie-consent-agree cookie-consent__agree">
+        {{ trans('cookieConsent::texts.agree') }}
+    </button>
+
+</div> --}}
+
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="js-cookie-consent cookie-consent z-20 fixed bottom-0 inset-x-0">
+  <div class="p-6">
+    <div class="p-3 bg-myyellow shadow-lg sm:p-4 rounded">
+      <div class="flex items-center justify-between flex-wrap">
+        <div class="w-0 flex-1 flex items-center">
+          <span class="flex p-2 rounded bg-yellow-400">
+            <!-- Heroicon name: outline/speakerphone -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+            </svg>
+          </span>
+          <p class="cookie-consent__message ml-3 font-medium text-white">
+            <span class="md:hidden">
+              {{-- {!! trans('cookieConsent::texts.message') !!} --}}
+              Kolačiće koristimo kako bismo vam pružili bolje iskustvo na našoj web stranici. Ako nastavite koristiti ovu web stranicu pretpostavit ćemo da ste zadovoljni njome.
+            </span>
+            <span class="hidden md:inline">
+              {{-- {!! trans('cookieConsent::texts.message') !!} --}}
+              Kolačiće koristimo kako bismo vam pružili bolje iskustvo na našoj web stranici. Ako nastavite koristiti ovu web stranicu pretpostavit ćemo da ste zadovoljni njome.
+            </span>
+          </p>
+        </div>
+        <div class="flex space-x-3 order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+          <a href="/politika-o-privatnosti" class="flex flex-grow items-center justify-center px-4 py-2 border border-transparent
+                shadow-sm text-sm font-medium text-yellow-600 bg-white hover:bg-yellow-50 rounded">
+            {{-- {{ trans('cookieConsent::texts.more') }} --}}
+            Saznaj više
+          </a>
+          <a href="#" class="js-cookie-consent-agree cookie-consent__agree flex flex-grow items-center justify-center px-4 py-2
+                border border-transparent shadow-sm text-sm font-medium text-yellow-600 bg-white hover:bg-yellow-50 rounded">
+            {{-- {{ trans('cookieConsent::texts.agree') }} --}}
+            OK
+          </a>
+        </div>
+        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+          <button type="button" class="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+.autocomplete-input {
+    @apply border rounded-full font-bold ;
+}
+@import 'tailwindcss/utilities';
+
+@import 'date-picker';
+@import 'multiselect';
+@import 'dropzone';
+@import 'dropzone2';
+
+[x-cloak] {
+    display: none !important;
+}

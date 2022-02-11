@@ -1,0 +1,9 @@
+title: 'Posebna ponuda'
+template: default
+layout: layout
+revisions: false
+route: '/posebna-ponuda/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

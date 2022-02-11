@@ -1,0 +1,23 @@
+name: Suncana
+super: true
+id: 3e0b7153-c478-46da-8c50-fde8ce1a616d
+password_hash: $2y$10$WXOwtXLzXZMYtXk28HiI0O/SkdUMVQJ3fY9kQ6qgwNuVE24iPj3Cq
+preferences:
+  collections:
+    novosti:
+      columns:
+        - title
+        - all_abroad
+        - work_and_travel
+        - au_pair
+        - obrazovni_programi
+        - hoteli
+    akcije:
+      columns:
+        - title
+        - hoteli
+        - obrazovni_programi
+        - all_abroad
+        - putovanja
+        - avio_karte
+        - naslovna

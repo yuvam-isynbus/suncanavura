@@ -1,0 +1,32 @@
+{{ partial:components/header-hero-pages
+title="hoteli"
+content="Hoteli, transferi, rent-a-car"
+img="hoteli_header.jpg"
+button="Pošalji upit"
+url="o-nama-i-kontakt#forma"
+}}
+
+{{ partial:components/cta-button
+content="„Putovanje je više od gledanja znamenitosti, to je duboka i trajna promjena ideja življenja.“
+Tu smo da Vam pomognemo izabrati aranžman iz naše ponude ili stvorimo putovanje po vašoj mjeri."
+url="o-nama-i-kontakt#forma"
+button="Pošalji upit"
+}}
+
+{{ partial:components/cta-button
+content="„Putovanje je više od gledanja znamenitosti, to je duboka i trajna promjena ideja življenja.“
+Tu smo da Vam pomognemo izabrati aranžman iz naše ponude ili stvorimo putovanje po vašoj mjeri."
+url="o-nama-i-kontakt#forma"
+button="Pošalji upit"
+}}
+
+{{ nav:collection:hoteli limit=10 }}
+    {{ partial:components/akcije-i-novosti-item
+        title="{{ title }}"
+        img="{{ assets }}{{ url }}{{ /assets }}"
+        undertitle="{{ podnaslov }}"
+        content="{{ content }}"
+        excerpt="{{ excerpt }}"
+        yellowtext="{{ badge }}"
+        url="{{ url }}" }}
+{{ /nav:collection:hoteli }}

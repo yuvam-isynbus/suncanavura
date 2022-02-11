@@ -1,0 +1,57 @@
+title: Jadran
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: podnaslov
+        field:
+          input_type: text
+          antlers: false
+          display: Podnaslov
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: assets
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          display: Assets
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: cijena
+        field:
+          input_type: text
+          antlers: false
+          display: Cijena
+          type: text
+          icon: text
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

@@ -1,0 +1,17 @@
+{{ partial:components/header-hero-pages
+title="akcije i popusti"
+content="Pregled naših akcija i sniženja"
+img="akcije-hero.jpeg"
+url="o-nama-i-kontakt#forma"
+button="Pošalji upit"
+}}
+
+{{ collection:akcije limit="20" sort="order"}}
+    {{ partial:components/akcije-i-novosti-item
+        title="{{ title }}"
+        img="{{ assets }}{{ url }}{{ /assets }}"
+        undertitle="{{ podnaslov }}"
+        excerpt="{{ excerpt }}"
+        yellowtext="{{ badge }}"
+        url="{{ url }}" }}
+{{ /collection:akcije }}

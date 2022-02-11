@@ -1,0 +1,41 @@
+{{ partial:components/header-hero-pages
+title="all abroad programi"
+content="LATINSKA AMERIKA <br>
+TEACHING ENGLISH ABROAD <br>
+ALL ABROAD EUROPE"
+img="all-abroad-header.jpg"
+url="o-nama-i-kontakt#forma"
+button="Pošalji upit"
+}}
+
+{{ partial:components/cta-button
+content="Izloženost raznolikim iskustvima je ključ rasta, a putovanja su izvor nadahnuća. <br><br>
+Naši programi omogućuju vam upoznavanje kultura drugih zemalja kroz praktično učenje. <br>
+Pronađite najbolju verziju sebe dok razvijate važne životne vještine!"
+url="o-nama-i-kontakt#forma"
+button="Pošalji upit"
+}}
+
+{{ nav:collection:all_abroad limit=10 }}
+    {{ partial:components/akcije-i-novosti-item
+        title="{{ title }}"
+        img="{{ assets }}{{ url }}{{ /assets }}"
+        undertitle="{{ podnaslov }}"
+        content="{{ content }}"
+        excerpt="{{ excerpt }}"
+        yellowtext="{{ badge }}"
+        url="{{ link }}"
+        targ="yes" }}
+{{ /nav:collection:all_abroad }}
+
+{{ collection:novosti limit=100 }}
+    {{ if all_abroad == true }}
+        {{ partial:components/cta-custom-home-cms
+            title="{{ title }}"
+            img="{{ assets }}{{ url }}{{ /assets }}"
+            undertitle="{{ podnaslov }}"
+            content="{{ content }}"
+            excerpt="{{ excerpt }}"
+            url="{{ url }}" }}
+    {{ /if }}
+{{ /collection:novosti }}

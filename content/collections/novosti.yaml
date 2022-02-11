@@ -1,0 +1,11 @@
+title: Novosti
+template: novosti-show
+layout: layout
+revisions: false
+route: '/novosti/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: false

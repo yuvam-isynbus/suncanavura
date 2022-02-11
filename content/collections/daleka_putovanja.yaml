@@ -1,0 +1,9 @@
+title: 'Daleka putovanja'
+template: default
+layout: layout
+revisions: false
+route: '/putovanja/daleka_putovanja/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

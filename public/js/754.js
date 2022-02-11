@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[754],{754:(e,a,n)=>{"use strict";n.r(a),n.d(a,{default:()=>o});var r=n(5166),s={class:"mt-5 prose"},t=(0,r.createVNode)("p",null,"Za prikaz uvjeta poslovanja destinacija mora biti unesena",-1);const c={render:function(e,a,n,c,o,u){return(0,r.openBlock)(),(0,r.createBlock)("div",s,[t])}},o=c}}]);

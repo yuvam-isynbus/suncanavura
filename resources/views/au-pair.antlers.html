@@ -1,0 +1,34 @@
+{{ partial:components/header-hero-pages-login
+title="Au pair"
+content="Oduvijek maštaš o putovanjima? <br>
+San ti je da engleski, njemački,francuski ili španjolski govoriš kao izvorni govornik? <br>
+Postani AU PAIR!"
+img="au-pair-hero.jpg"
+url="/login"
+button="Prijavi se"
+}}
+
+{{ partial:components/cta-button
+content="Au pair je mlada osoba koja živi kao član jedne obitelji u nekoj stranoj zemlji.
+Au pair pomaže oko djece i u nekim zemljama oko lakših kućanskih poslova, a zauzvrat ima smještaj, hranu i džeparac."
+url="http://www.aupair-agencija.info/"
+targ="yes"
+button="Saznaj više"
+}}
+
+{{ partial:components/all-abroad-icons }}
+
+{{ collection:novosti limit=100 }}
+    {{ if au_pair == true }}
+        {{ partial:components/cta-custom-home-cms
+            title="{{ title }}"
+            img="{{ assets }}{{ url }}{{ /assets }}"
+            undertitle="{{ podnaslov }}"
+            content="{{ content }}"
+            excerpt="{{ excerpt }}"
+            yellowtext="{{ badge }}"
+            url="{{ url }}"
+            ctalabel="{{ cta_button_label }}"
+            ctalink="{{ cta_button_link }}" }}
+    {{ /if }}
+{{ /collection:novosti }}

@@ -1,0 +1,12 @@
+title: Akcije
+template: akcije-show
+layout: layout
+revisions: false
+route: '/akcije/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: false
+  max_depth: 1

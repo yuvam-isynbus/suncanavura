@@ -1,0 +1,26 @@
+title: SEO
+data:
+  collection_defaults:
+    -
+      collection: null
+      fallback: null
+      field_handle: null
+      custom_text: null
+  json_ld_type: none
+  breadcrumbs: false
+  use_social_image_generation: false
+  sitemap_collections:
+    - pages
+    - akcije
+    - all_abroad
+    - obrazovni_programi
+    - hoteli
+  use_google_site_verification: false
+  use_fathom: false
+  use_cloudflare_web_analytics: false
+  tracker_type: gtm
+  anonymize_ip: true
+  google_tag_manager: GTM-PGP3M5P
+  use_cookie_banner: false
+  display_style: left
+  link_privacy_statement: none

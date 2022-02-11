@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[2675],{2675:(e,t,o)=>{"use strict";o.r(t),o.d(t,{default:()=>s});var n=o(5166),c=(0,n.createVNode)("h1",{class:"mb-8 font-bold text-3xl"},"Show Product",-1);const r={components:{},props:{},data:function(){},methods:{},render:function(e,t,o,r,s,l){return(0,n.openBlock)(),(0,n.createBlock)("div",null,[c])}},s=r}}]);

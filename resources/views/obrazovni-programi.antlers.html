@@ -1,0 +1,45 @@
+{{ partial:components/header-hero-pages
+title="obrazovni programi"
+content="TEČAJEVI JEZIKA <br>
+WEST END STAGE SUMME SCHOOL <br>
+INTERNSHIP <br>
+INTERNATIONAL SUMMER CAMPS"
+img="obrazovni-programi-hero.jpeg"
+button="Pošalji upit"
+url="o-nama-i-kontakt#forma"
+}}
+
+{{ partial:components/cta-button
+content="“Obrazovanje nije priprema za život, obrazovanje je život. ” John Dewey
+<br><br>
+Nikad nije prerano za izlaganje znanjima i vještinama, niti prekasno za nova otkrića.
+Naš iskusni tim budno prati programe u inozemstvu za studente, djecu i odrasle."
+url="o-nama-i-kontakt#forma"
+button="Pošalji upit"
+}}
+
+{{ nav:collection:obrazovni_programi limit=10 }}
+    {{ partial:components/akcije-i-novosti-item
+        title="{{ title }}"
+        img="{{ assets }}{{ url }}{{ /assets }}"
+        undertitle="{{ podnaslov }}"
+        content="{{ content }}"
+        excerpt="{{ excerpt }}"
+        yellowtext="{{ badge }}"
+        url="{{ url }}" }}
+{{ /nav:collection:obrazovni_programi }}
+
+{{ collection:novosti limit=100 }}
+    {{ if obrazovni_programi == true }}
+        {{ partial:components/cta-custom-home-cms
+            title="{{ title }}"
+            img="{{ assets }}{{ url }}{{ /assets }}"
+            undertitle="{{ podnaslov }}"
+            content="{{ content }}"
+            excerpt="{{ excerpt }}"
+            yellowtext="{{ badge }}"
+            url="{{ url }}"
+            ctalabel="{{ cta_button_label }}"
+            ctalink="{{ cta_button_link }}" }}
+    {{ /if }}
+{{ /collection:novosti }}

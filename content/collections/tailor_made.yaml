@@ -1,0 +1,9 @@
+title: 'Tailor made'
+template: default
+layout: layout
+revisions: false
+route: '/putovanja/tailor_made/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

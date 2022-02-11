@@ -1,0 +1,33 @@
+{{ partial:components/header-hero-pages-login
+title="work and travel"
+content="Provedi nezaboravno ljeto u Americi!
+Putuj, zabavi se i zaradi"
+img="wt-hero.jpg"
+button="Prijavi se"
+url="/login"
+}}
+
+{{ partial:components/cta-button
+content="Work and Travel USA je program kulturološke razmjene pod pokroviteljstvom State Departmenta i namijenjen je studentima
+koji svoje ljetne praznike žele provesti na drugačiji način: radeći, putujući i zabavljajući se u SAD-u!"
+url="http://www.work-and-travel-agencija.info/"
+targ="yes"
+button="Saznaj više"
+}}
+
+{{ partial:components/work-travel-icons}}
+
+{{ collection:novosti limit=100 }}
+    {{ if work_and_travel == true }}
+        {{ partial:components/cta-custom-home-cms
+            title="{{ title }}"
+            img="{{ assets }}{{ url }}{{ /assets }}"
+            undertitle="{{ podnaslov }}"
+            content="{{ content }}"
+            excerpt="{{ excerpt }}"
+            yellowtext="{{ badge }}"
+            url="{{ url }}"
+            ctalabel="{{ cta_button_label }}"
+            ctalink="{{ cta_button_link }}" }}
+    {{ /if }}
+{{ /collection:novosti }}

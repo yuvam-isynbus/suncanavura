@@ -1,0 +1,18 @@
+title: 'CTA Button'
+fields:
+  -
+    handle: cta_button_label
+    field:
+      input_type: text
+      antlers: false
+      display: 'CTA Button Label'
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: cta_button_link
+    field:
+      display: 'CTA Button Link'
+      type: link
+      icon: link
+      listable: hidden
